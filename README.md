@@ -19,3 +19,15 @@
 
 ```bash
 $ echo "國立大學" | ./kyuji.py
+
+## インストール
+*リポジトリをクローンしてください。
+
+git clone https://github.com/muuuuu2525/kyuji.git
+
+##ライセンス
+*このソフトウェアは、BSD 3条項ライセンスの下で公開されています。
+*© 2025 Manamu Asano
+
+
+
