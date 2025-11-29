@@ -9,13 +9,13 @@ ng () {
 
 res=0
 
-out=$(echo "國立大學" | ./kyuji.py)
+out=$(echo "國立大學" | python3 kyuji.py)
 [ "${out}" = "国立大学" ] || ng "$LINENO"
 
-out=$(echo "こんにちは" | ./kyuji.py)
+out=$(echo "こんにちは" | python3 kyuji.py)
 [ "${out}" = "こんにちは" ] || ng "$LINENO"
 
-out=$(echo "100圓" | ./kyuji.py)
+out=$(echo "100圓" | python3 kyuji.py)
 [ "${out}" = "100円" ] || ng "$LINENO"
 
 [ "$res" = 0 ] && echo OK
