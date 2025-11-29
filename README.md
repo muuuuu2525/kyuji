@@ -10,7 +10,7 @@
 
 ## 必要な環境
 
-* Python 3.7+
+* Python 3.8+
 * Linux (tested on Ubuntu 20.04/22.04)
 
 ## 使用方法
