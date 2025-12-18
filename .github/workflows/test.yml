@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.8", "3.9", "3.10"]
+        python-version: ["3.7", "3.8", "3.9", "3.10"]
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
@@ -17,5 +17,10 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: Run tests
+      env:
+        PYTHONIOENCODING: utf-8
+        LANG: C.UTF-8
       run: |
+        chmod +x kyuji
+        chmod +x test.bash
         bash -xv ./test.bash
