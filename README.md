@@ -19,8 +19,9 @@
 
 ```bash
 $ echo "國立大學" | ./kyuji
-```
 国立大学
+```
+
 * ファイルの内容を変換することもできます。
 ```bash
 $ cat old.txt | ./kyuji
@@ -28,9 +29,11 @@ $ cat old.txt | ./kyuji
 
 ## インストール
 * リポジトリをクローンし、実行権限を与えてください。
-パスの通ったディレクトリに置くか、エイリアスを設定して使用します。
-
-git clone https://github.com/muuuuu2525/kyuji.git
+```bash
+git clone [https://github.com/muuuuu2525/kyuji.git](https://github.com/muuuuu2525/kyuji.git)
+cd kyuji
+chmod +x kyuji
+```
 
 ## ライセンス
 * このソフトウェアは、3条項BSDライセンスの下で公開されています。
