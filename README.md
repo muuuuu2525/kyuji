@@ -23,7 +23,7 @@ $ echo "國立大學" | ./kyuji
 国立大学
 * ファイルの内容を変換することもできます。
 ```bash
-$ cat old.txt | ./kyuji.py
+$ cat old.txt | ./kyuji
 ```
 
 ## インストール
