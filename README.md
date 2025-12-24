@@ -15,6 +15,14 @@
 * Windows / macOS では未検証
 * 入力は UTF-8 を前提としています
 
+## インストール
+* リポジトリをクローンし、実行権限を与えてください。
+```bash
+git clone https://github.com/muuuuu2525/kyuji.git
+cd kyuji
+chmod +x kyuji
+```
+
 ## 使用方法
 
 * 標準入力からテキストを渡します。
@@ -31,12 +39,18 @@ $ cat old.txt | ./kyuji
 （例）國立大學 → 国立大学
 ```
 
-## インストール
-* リポジトリをクローンし、実行権限を与えてください。
+## 終了ステータス
+
+- 0: 正常終了
+- 1: 予期しないエラー
+
+## テスト
+
+以下のコマンドでテストを実行できます。
+
 ```bash
-git clone https://github.com/muuuuu2525/kyuji.git
-cd kyuji
-chmod +x kyuji
+./test.sh
+
 ```
 
 ## ライセンス
