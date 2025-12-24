@@ -11,11 +11,14 @@
 ## 必要な環境
 
 * Python 3.8+
-* Linux (tested on Ubuntu 22.04/24.04)
+* Linux (22.04/24.04 でテスト済み)
+* Windows / macOS では未検証
+* 入力は UTF-8 を前提としています
 
 ## 使用方法
 
 * 標準入力からテキストを渡します。
+* 実行例とその出力は以下のとおりです。
 
 ```bash
 $ echo "國立大學" | ./kyuji
@@ -25,13 +28,13 @@ $ echo "國立大學" | ./kyuji
 * ファイルの内容を変換することもできます。
 ```bash
 $ cat old.txt | ./kyuji
-(変換されたテキストが出力されます)
+（例）國立大學 → 国立大学
 ```
 
 ## インストール
 * リポジトリをクローンし、実行権限を与えてください。
 ```bash
-git clone [https://github.com/muuuuu2525/kyuji.git](https://github.com/muuuuu2525/kyuji.git)
+git clone https://github.com/muuuuu2525/kyuji.git
 cd kyuji
 chmod +x kyuji
 ```
