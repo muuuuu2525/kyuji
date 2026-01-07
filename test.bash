@@ -9,17 +9,17 @@ ng () {
 
 res=0
 
-### TEST 1: 通常の変換 ###
+### TEST 1: 通常変換 ###
 out=$(echo "國立大學" | ./kyuji)
 [ "$?" = 0 ] || ng "$LINENO"
 [ "${out}" = "国立大学" ] || ng "$LINENO"
 
-### TEST 2: 何も変換しない場合 ###
+### TEST 2: 何も変換しない ###
 out=$(echo "こんにちは" | ./kyuji)
 [ "$?" = 0 ] || ng "$LINENO"
 [ "${out}" = "こんにちは" ] || ng "$LINENO"
 
-### TEST 3: 記号や数字 ###
+### TEST 3: 記号・数字 ###
 out=$(echo "100圓!?" | ./kyuji)
 [ "$?" = 0 ] || ng "$LINENO"
 [ "${out}" = "100円!?" ] || ng "$LINENO"
@@ -29,8 +29,7 @@ out=$(echo "" | ./kyuji)
 [ "$?" = 0 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
-### TEST 5: エラー動作の確認（ここが重要！） ###
-# 引数をつけて実行し、終了ステータスが 1 になることを確認する
+### TEST 5: エラー動作の確認 ###
 ./kyuji arg1 > /dev/null 2>&1
 [ "$?" = 1 ] || ng "$LINENO"
 
